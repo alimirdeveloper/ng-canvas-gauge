@@ -37,11 +37,16 @@ ng-canvas-gauge is an Angular component for creating a customizable gauge with a
   <ng-canvas-gauge
     [value]="yourValue"
     [max]="yourMaxValue"
+    [radius]="120"
+    [width]="400"
+    [height]="400"
     [ticks]="yourNumberOfTicks">
   </ng-canvas-gauge>
   ```
 
 Replace yourValue, yourMaxValue, and yourNumberOfTicks with your desired values.
+  
+
 
 ## API
 
@@ -50,3 +55,6 @@ Replace yourValue, yourMaxValue, and yourNumberOfTicks with your desired values.
 * value: The current value to be displayed on the gauge.
 * max: The maximum value of the gauge scale.
 * ticks: The number of ticks to be displayed on the gauge.
+* radius : the gauge radius ( default is 80)
+* width : width of the canvas (default is 200)
+* height : height of the canvas ( default is 200)
