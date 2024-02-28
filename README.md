@@ -18,7 +18,7 @@ ng-canvas-gauge is an Angular component for creating a customizable gauge with a
    npm install ng-canvas-gauge
 
 2. Import the NgCanvasGaugeComponent in your Angular module:
-   ```
+   ```typescript
    import { NgCanvasGaugeComponent } from 'ng-canvas-gauge';
 
     // ...
@@ -32,17 +32,17 @@ ng-canvas-gauge is an Angular component for creating a customizable gauge with a
     })
     export class YourModule { }
 
-3. Use the ng-canvas-gauge component in your template:
-  ```
-  <ng-canvas-gauge
-    [value]="yourValue"
-    [max]="yourMaxValue"
-    [radius]="120"
-    [width]="400"
-    [height]="400"
-    [ticks]="yourNumberOfTicks">
-  </ng-canvas-gauge>
-  ```
+  3. Use the ng-canvas-gauge component in your template:
+      ```html
+      <ng-canvas-gauge
+        [value]="yourValue"
+        [max]="yourMaxValue"
+        [radius]="120"
+        [width]="400"
+        [height]="400"
+        [ticks]="yourNumberOfTicks">
+      </ng-canvas-gauge>
+      ```
 
 Replace yourValue, yourMaxValue, and yourNumberOfTicks with your desired values.
   
