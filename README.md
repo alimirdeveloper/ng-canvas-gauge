@@ -2,6 +2,8 @@
 
 ng-canvas-gauge is an Angular component for creating a customizable gauge with a 270-degree scale.
 
+![Snapshot](https://github.com/alimirdeveloper/ng-canvas-gauge/raw/main/src/assets/images/snapshot/snapshot.PNG)
+
 ## Features
 
 - Display values on a 270-degree circular scale.
