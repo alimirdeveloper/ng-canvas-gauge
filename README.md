@@ -58,3 +58,5 @@ Replace yourValue, yourMaxValue, and yourNumberOfTicks with your desired values.
 * radius : the gauge radius ( default is 80)
 * width : width of the canvas (default is 200)
 * height : height of the canvas ( default is 200)
+* valueLabel : label of the value (like KM)
+* lineWidth : the width of the draw pen
