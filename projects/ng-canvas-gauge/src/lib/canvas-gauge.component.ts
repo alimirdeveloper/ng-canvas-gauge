@@ -9,14 +9,39 @@ import { Component, ElementRef, Input, SimpleChanges, ViewChild } from '@angular
 })
 export class NgCanvasGaugeComponent {
  // Input properties
+/**
+ * Value to display on the gauge.
+ */
  @Input({ required: true }) value: number = 0;
+ /**
+ * Maximum value of the gauge.
+ */
  @Input({ required: true }) max: number = 360;
- @Input({ required: false }) ticks: number = 5; // Number of ticks
- @Input({ required: true }) width!: number ; // Number of ticks
- @Input({ required: true }) height!: number ; // Number of ticks
- @Input({ required: false }) radius: number = 80; // Number of ticks
- @Input({ required: false }) valueLabel: string = 'value'; // Number of ticks
- @Input({ required: false }) lineWidth: number = 10; // Number of ticks
+ /**
+ * Number of ticks to display on the gauge.
+ */
+ @Input({ required: false }) ticks: number = 5; 
+ /**
+ * Width of the gauge canvas.
+ */
+ @Input({ required: true }) width!: number ;
+ 
+/**
+ * Height of the gauge canvas.
+ */
+ @Input({ required: true }) height!: number ; 
+ /**
+ * Radius of the gauge.
+ */
+ @Input({ required: false }) radius: number = 80; 
+ /**
+ * Label for the value displayed on the gauge.
+ */
+ @Input({ required: false }) valueLabel: string = 'value';
+ /**
+ * Line width of the gauge.
+ */
+ @Input({ required: false }) lineWidth: number = 10; 
 
  // Reference to the canvas element
  @ViewChild('gaugeCanvas', { static: true }) gaugeCanvas!: ElementRef<HTMLCanvasElement>;
